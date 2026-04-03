@@ -83,13 +83,15 @@ function buscarClimaPorCoordenadas(lat, lon) {
 // =============================
 function exibirResultado(data, local) {
   const clima = data.current_weather;
-
   document.getElementById("resultado").innerHTML = `
-    <div>📍 Local: ${local}</div>
-    <div>🌡️ Temperatura: ${clima.temperature}°C</div>
-    <div>💨 Vento: ${clima.windspeed} km/h</div>
+    <div class="card">
+      <h2>📍 Local: ${local}</h2>
+      <p> ${icone} Temperatura: ${clima.temperature}°C</p>
+      <p>💨 Vento: ${clima.windspeed} km/h</p>
+    </div>
   `;
 }
+
 
 // =============================
 // 🔘 EVENTO DO BOTÃO LOCALIZAÇÃO

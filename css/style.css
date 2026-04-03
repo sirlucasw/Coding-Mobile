@@ -14,15 +14,20 @@ body {
     height: 100vh;
 }
 
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  width: 80%;
+}
+
 button {
-    width: 40%;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    background: white;
-    color: #333;
-    cursor: pointer;
-    font-size: 16px;
+ padding: 12px;
+  border-radius: 10px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 #resultado {
@@ -46,7 +51,7 @@ button {
 
 .container {
     background: rgba(255, 255, 255, 0.15);
-    padding: 30px;
+    padding: 20px;
     border-radius: 20px;
     text-align: center;
     width: 90%;
@@ -66,4 +71,13 @@ button {
     #resultado {
         font-size: 16px;
     }
+}
+
+.card {
+  background: white;
+  color: #333;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  text-align: center;
 }
