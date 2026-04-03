@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/img/image.png" type="image/png"> <!-- Ícone de nuvem na aba -->
 </head>
-<div class = "container">
-<h1>Dados Metereológicos - Cidades do Brasil ⛅</h1>
+<body>
+    <div class = "container">
+        <h1>Dados Metereológicos - Cidades do Brasil ⛅</h1>
 
-<input type="text" id="cidade" placeholder="Digite a cidade">
-<button onclick ="buscarClima()">Buscar Clima</button>
-<pre id="resultado"></pre>
+    <input type="text" id="cidade" placeholder="Digite a cidade">
+    <button onclick ="buscarClima()">Buscar Clima</button>
 
+     <!-- BOTÃO PARA LOCALIZAÇÃO DO USUÁRIO-->
+    <button id="btnLocalizacao">📍 Usar minha localização</button>
+
+    <pre id="resultado"></pre>
 </div>
 
-<body>
+
 <script src="/js/script.js"></script>
 </body>
 
