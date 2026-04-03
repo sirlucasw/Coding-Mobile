@@ -71,6 +71,10 @@ function buscarClimaPorCoordenadas(lat, lon) {
     .then(res => res.json())
     .then(data => {
       exibirResultado(data, "Sua localização");
+    })
+    .catch(() => {
+      document.getElementById("resultado").innerHTML =
+        "📡 Sem conexão com a internet.";
     });
 }
 
@@ -92,3 +96,12 @@ function exibirResultado(data, local) {
 // =============================
 document.getElementById("btnLocalizacao")
   .addEventListener("click", usarLocalizacao);
+
+// =============================
+// ⚙️ REGISTRO DO SERVICE WORKER
+// =============================
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js")
+    .then(() => console.log("Service Worker registrado"))
+    .catch((error) => console.log("Erro no SW:", error));
+}
